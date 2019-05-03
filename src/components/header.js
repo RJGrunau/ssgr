@@ -16,7 +16,7 @@ const HeaderWrapper = styled.div`
   max-width: 1400px;
   padding: 1.45rem 1.0975rem;
   position: relative;
-  height: 75px;
+  height: 90px;
   display: flex;
   flex-flow: wrap row;
   justify-content: space-between;
@@ -28,10 +28,11 @@ const HeaderWrapper = styled.div`
 `
 const SiteHeadline = styled.h1`
   margin: 0;
-  width: 35%;
+  width: 40%;
   font-family: 'Open Sans';
   font-weight: 300;
   letter-spacing: 2px;
+  padding-bottom: 10px;
   
   @media(max-width: 800px){
     width: 100%;
