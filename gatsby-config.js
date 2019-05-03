@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `South Sound Guitar Repair`,
+    description: `A vintage and high-end guitar and bass repair shop owned and operated by luthier Jeff Hoppe`,
+    author: `@rjgrunau`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
