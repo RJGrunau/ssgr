@@ -1,34 +1,65 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import styled from 'styled-components'
+
+
+import Nav from '../components/nav'
+
+
+const SiteHeader = styled.header`
+  background: rgba(15,15,15,1);
+  margin-bottom: 1.45rem;
+`
+const HeaderWrapper = styled.div`
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 1.45rem 1.0975rem;
+  position: relative;
+  height: 75px;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: baseline;
+  @media(max-width: 800px){
+    justify-content: center;
+    height: 115px;
+  }
+`
+const SiteHeadline = styled.h1`
+  margin: 0;
+  width: 35%;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  letter-spacing: 2px;
+  
+  @media(max-width: 800px){
+    width: 100%;
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+    letter-spacing: normal;
+    margin-bottom: 15px;
+  }
+`
+const HomeLink = styled(Link)`
+  color: rgba(243,243,243,1);
+  text-decoration: none;
+`
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
+  <SiteHeader>
+    <HeaderWrapper>
+      <SiteHeadline>
+        <HomeLink
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
         >
           {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+        </HomeLink>
+      </SiteHeadline>
+      <Nav/>
+    </HeaderWrapper>
+  </SiteHeader>
 )
 
 Header.propTypes = {
