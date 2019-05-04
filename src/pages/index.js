@@ -23,6 +23,14 @@ const Image = styled(Img)`
   width: 100%;
   background: cover;
 `
+const TextHolder = styled.section`
+  width: 100%;
+  margin-top: 50px;
+  height: 300px;
+  background: grey;
+  display: flex;
+  flex-flow: wrap row;
+`
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -33,6 +41,9 @@ const IndexPage = ({ data }) => (
           fluid={data.file.childImageSharp.fluid}
           />
         </ImageHolder>
+        <TextHolder>
+          
+        </TextHolder>
       </Container>
   </Layout>
 )
