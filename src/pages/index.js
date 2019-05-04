@@ -24,11 +24,15 @@ const Image = styled(Img)`
   background: cover;
 `
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <Container>
-        test
+        <ImageHolder>
+          <Image
+            fluid = {data.fluid.childImageSharp.fluid} 
+          />
+        </ImageHolder>
       </Container>
   </Layout>
 )
