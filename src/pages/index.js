@@ -30,7 +30,7 @@ const IndexPage = ({ data }) => (
       <Container>
         <ImageHolder>
           <Image
-            fluid = {data.fluid.childImageSharp.fluid} 
+          fluid={data.file.childImageSharp.fluid}
           />
         </ImageHolder>
       </Container>
@@ -40,13 +40,13 @@ const IndexPage = ({ data }) => (
 export default IndexPage
 
 export const query = graphql`
-  query{
-    file(relativePath: { eq: "tele.png"}) {
-      childImageSharp {
-        fluid(maxWidth: 1400) {
-          ...GatsbyImageSharpFluid
-        }
+query{
+  file(relativePath: { eq: "tele.png"}) {
+    childImageSharp {
+      fluid(maxWidth: 1400){
+        ...GatsbyImageSharpFluid
       }
     }
   }
+}
 `
