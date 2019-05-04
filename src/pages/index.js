@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import styled from 'styled-components'
 
 import Layout from "../components/layout"
@@ -34,3 +34,15 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const query = graphql`
+  query{
+    file(relativePath: { eq: "tele.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 1400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
