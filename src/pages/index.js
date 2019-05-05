@@ -7,6 +7,7 @@ import Img from "gatsby-image"
 import SEO from "../components/seo"
 import Headlines from '../components/headlines'
 import MinorHeadline from "../components/minorHeadline";
+import SmallAbout from '../components/smallAbout'
 
 
 const Container = styled.div`
@@ -30,7 +31,6 @@ const TextHolder = styled.section`
   width: 100%;
   padding: 10px;
   margin-top: 50px;
-  background: rgba(128,128,128, 0.2);
   display: flex;
   flex-flow: wrap row;
   justify-content: center;
@@ -52,6 +52,7 @@ const IndexPage = ({ data }) => (
         <MinorHeadline title="Tacoma - Washinton" />
         </TextHolder>
       </Container>
+      <SmallAbout/>
   </Layout>
 )
 
