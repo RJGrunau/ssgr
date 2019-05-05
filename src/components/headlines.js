@@ -6,6 +6,8 @@ const Headline = styled.h1`
   font-family: 'Open Sans';
   font-weight: 100;
   text-transform: uppercase;
+  color: #f3f3f3;
+  letter-spacing: 3px;
 `
 
 export default ( props ) => {

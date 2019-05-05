@@ -27,10 +27,10 @@ const Image = styled(Img)`
 const TextHolder = styled.section`
   width: 100%;
   margin-top: 50px;
-  height: 300px;
-  background: grey;
+  background: rgba(128,128,128, 0.2);
   display: flex;
   flex-flow: wrap row;
+  justify-content: center;
 `
 
 const IndexPage = ({ data }) => (
@@ -44,6 +44,7 @@ const IndexPage = ({ data }) => (
         </ImageHolder>
         <TextHolder>
           <Headlines title = "south sound guitar repair"/>
+          <Headlines title="Tacoma - Washinton"/>
         </TextHolder>
       </Container>
   </Layout>
