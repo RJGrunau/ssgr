@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
+import Headlines from '../components/headlines'
 
 const Container = styled.div`
   width: 100%;
@@ -42,7 +43,7 @@ const IndexPage = ({ data }) => (
           />
         </ImageHolder>
         <TextHolder>
-          
+          <Headlines title = "south sound guitar repair"/>
         </TextHolder>
       </Container>
   </Layout>
