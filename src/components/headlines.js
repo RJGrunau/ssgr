@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Headline = styled.h1`
-  width: 60%;
+  width: 100%;
   font-size: 36pt;
   font-family: 'Open Sans';
   font-weight: 100;

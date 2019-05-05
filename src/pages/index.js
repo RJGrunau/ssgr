@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
 import Headlines from '../components/headlines'
+import MinorHeadline from "../components/minorHeadline";
+
 
 const Container = styled.div`
   width: 100%;
@@ -46,7 +48,8 @@ const IndexPage = ({ data }) => (
         </ImageHolder>
         <TextHolder>
           <Headlines title = "south sound guitar repair"/>
-          <Headlines title="Tacoma - Washinton"/>
+        <Headlines title="Vintage and High-end gutair and bass repair"/>
+        <MinorHeadline title="Tacoma - Washinton" />
         </TextHolder>
       </Container>
   </Layout>
