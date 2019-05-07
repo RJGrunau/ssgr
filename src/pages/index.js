@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 import Headlines from '../components/headlines'
 import MinorHeadline from "../components/minorHeadline";
 import SmallAbout from '../components/smallAbout'
+import SmallContact from "../components/smallForm";
 
 
 const Container = styled.div`
@@ -16,6 +17,12 @@ const Container = styled.div`
   background: linear-gradient(rgba(21,21,21,1),
   rgba(21,21,21,0.3));
   color: white;
+`
+const MinorContainer = styled.section`
+  margin-top: 125px;
+  width: 100%;
+  background: blue;
+  height: 400px;
 `
 
 const ImageHolder = styled.div`
@@ -52,7 +59,12 @@ const IndexPage = ({ data }) => (
         <MinorHeadline title="Tacoma - Washinton" />
         </TextHolder>
       </Container>
-      <SmallAbout/>
+      <MinorContainer>
+
+        {/* <SmallAbout/>
+        <SmallContact/> */}
+      </MinorContainer>
+      
   </Layout>
 )
 
