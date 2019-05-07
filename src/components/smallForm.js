@@ -16,7 +16,6 @@ const Labels = styled.label`
   color: rgba(27,27,27,0.9);
 `
 
-
 const Inputs = styled.input`
   border-radius: 5px;
   width: 60%;
@@ -24,6 +23,16 @@ const Inputs = styled.input`
   padding: 5px;
 
   &:focus {
+    border: solid 2px blue;
+  }
+`
+
+const TextField = styled.textarea`
+  margin: 10px; 
+  border-radius: 5px;
+  padding: 5px;
+
+  &:focus{
     border: solid 2px blue;
   }
 `
@@ -43,15 +52,27 @@ export default class SmallContact extends Component {
   render() {
     return (
       <FormShell>
-        <Labels>name:</Labels>
+        <Labels htmlFor="name">name:</Labels>
 				<Inputs
           name = "name"
           id = "name"
           type = "text"
           placeholder = "your name here"
         />
-				<Inputs/>
-				<textarea/>
+        <Labels htmlFor="email">email:</Labels>
+				<Inputs
+          name = "email"
+          id = "email"
+          type = "email"
+          placeholder = "you@youremail.com"
+        />
+        <Labels htmlFor="message">message:</Labels>
+				<TextField
+          name = "message"
+          id = "message"
+          type = "text"
+          placeholder = "your message here"
+        />
         
       </FormShell>
     )
