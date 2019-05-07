@@ -24,7 +24,7 @@ const MinorContainer = styled.section`
   display: flex; 
   flex-flow: wrap row;
   justify-content: center;
-  align-items: baseline;
+  align-items: flex-end;
   margin-bottom: 100px;
 `
 
