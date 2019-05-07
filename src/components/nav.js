@@ -1,5 +1,12 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
+
+const Links = [
+  {to: '/contact', title: 'Contact'},
+  {to: '/gallery', title: 'Gallery'},
+  {to: '/about',title: 'About'}
+]
 
 const SiteNav = styled.nav`
     width: 40%;
@@ -19,6 +26,10 @@ const NavDivs = styled.div`
     letter-spacing: 2px;
     margin: 10px;
     padding: 5px;
+`
+const InnerLinks = styled(Link)`
+  color: #f3f3f3;
+  text-decoration: none;
 `
 
 export default () => {
