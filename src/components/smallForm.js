@@ -9,6 +9,14 @@ const FormShell = styled.form`
   display: flex;
   flex-flow: wrap column;
 `
+const Labels = styled.label`
+  margin: 5px;
+  margin-left: 10px;
+  font-family: Roboto;
+  color: rgba(27,27,27,0.9);
+`
+
+
 const Inputs = styled.input`
   border-radius: 5px;
   width: 60%;
@@ -35,7 +43,10 @@ export default class SmallContact extends Component {
   render() {
     return (
       <FormShell>
+        <Labels>name:</Labels>
 				<Inputs
+          name = "name"
+          id = "name"
           type = "text"
           placeholder = "your name here"
         />
