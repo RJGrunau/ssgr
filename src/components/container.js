@@ -9,9 +9,10 @@ const Containers = styled.div`
   rgba(21,21,21,0.3));
   color: white;
 `
-export default ({children}) => {
-    
+export default ({children}) => (
+
     <Containers>
         {children}
     </Containers>
-}
+)
+    
