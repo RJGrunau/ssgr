@@ -22,6 +22,10 @@ I am ready to help with your project, large or small.  Acoustic or electric.`
 const AboutImage = styled.figure`
     width: 40%;
     height: 850px;
+
+    @media(max-width: 800px) {
+        width: 100%;
+    }
 `
 const Image = styled(Img)`
   height: 100%;
@@ -35,6 +39,12 @@ const TextHolder = styled.div`
     margin-top: 5px;
     margin-left: 30px;
     text-align: left;
+
+    @media(max-width: 800px){
+        width: 100%;
+        margin: 5px;
+        padding: 3px;
+    }
 `
 const AboutGraphs = styled.p`
     width: 100%;
