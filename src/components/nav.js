@@ -26,10 +26,16 @@ const NavDivs = styled.div`
     letter-spacing: 2px;
     margin: 10px;
     padding: 5px;
+
+   
 `
 const InnerLinks = styled(Link)`
   color: #f3f3f3;
   text-decoration: none;
+
+  &:hover {
+    color: rgba(50,205,50,0.8);
+  }
 `
 
 export default () => {
@@ -39,13 +45,15 @@ export default () => {
         const { to, title } = link
 
         return(
-          <InnerLinks
-            key={title}
-            title={title}
-            to={to}
-          >
-            {title}
-          </InnerLinks>
+          <NavDivs>
+            <InnerLinks
+              key={title}
+              title={title}
+              to={to}
+            >
+              {title}
+            </InnerLinks>
+          </NavDivs>
         )
       })}
       {/* <NavDivs>Contact</NavDivs>
