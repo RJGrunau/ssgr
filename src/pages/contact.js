@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Container from '../components/container'
-import ImageHolder from '../components/imageContainer'
+import Graphs from '../components/pargagraphs'
 
 const AboutImage = styled.figure`
     width: 40%;
@@ -16,6 +16,12 @@ const Image = styled(Img)`
   height: 100%;
   width: 100%;
   background: cover;
+`
+const TextHolder = styled.div`
+    width: 55%;
+    padding: 15px;
+    margin: 15px;
+    text-align: left;
 `
 
 
@@ -29,6 +35,11 @@ const ContactPage  = ({data}) => (
                     alt="jeff hoppe"
                 />
             </AboutImage>
+            <TextHolder>
+                <Graphs
+                
+                />
+            </TextHolder>
         </Container>
     </Layout>
 )
