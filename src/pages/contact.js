@@ -8,9 +8,9 @@ import SEO from '../components/seo';
 import Container from '../components/container'
 import ImageHolder from '../components/imageContainer'
 
-const AboutImage = styled(ImageHolder)`
+const AboutImage = styled.figure`
     width: 40%;
-    height: 400px;
+    height: 700px;
 `
 const Image = styled(Img)`
   height: 100%;
