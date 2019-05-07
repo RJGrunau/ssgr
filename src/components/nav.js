@@ -35,9 +35,22 @@ const InnerLinks = styled(Link)`
 export default () => {
   return (
     <SiteNav>
-      <NavDivs>Contact</NavDivs>
+      {Links.map( link => {
+        const { to, title } = link
+
+        return(
+          <InnerLinks
+            key={title}
+            title={title}
+            to={to}
+          >
+            {title}
+          </InnerLinks>
+        )
+      })}
+      {/* <NavDivs>Contact</NavDivs>
       <NavDivs>Gallery</NavDivs>
-      <NavDivs>About</NavDivs>
+      <NavDivs>About</NavDivs> */}
     </SiteNav>
   )
 }
