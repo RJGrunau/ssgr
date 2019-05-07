@@ -10,7 +10,7 @@ import Nav from '../components/nav'
 const SiteHeader = styled.header`
   background: rgba(15,15,15,1);
   margin-bottom: 1.45rem;
-  box-shadow:  2px 2px rgba(255,255,240, 0.4);
+  box-shadow:  1px 1px rgba(255,255,240, 0.4);
 `
 const HeaderWrapper = styled.div`
   margin: 0 auto;
