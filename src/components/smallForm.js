@@ -36,6 +36,20 @@ const TextField = styled.textarea`
     border: solid 2px blue;
   }
 `
+const ButtonHolder = styled.div`
+  width: 100%;
+  margin: 10px;
+`
+const SubmitButton = styled.button`
+  width: 20%;
+  padding: 2px 4px;
+  border-radius: 5px;
+  background: rgba(50,205,50,0.9);
+  font-family: 'Open Sans';
+  font-weigth: 100;
+
+`
+
 
 export default class SmallContact extends Component {
     constructor(props) {
@@ -73,7 +87,11 @@ export default class SmallContact extends Component {
           type = "text"
           placeholder = "your message here"
         />
-        
+        <ButtonHolder>
+          <SubmitButton>
+            Submit
+          </SubmitButton>
+        </ButtonHolder>
       </FormShell>
     )
   }
