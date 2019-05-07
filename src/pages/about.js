@@ -21,7 +21,7 @@ I am ready to help with your project, large or small.  Acoustic or electric.`
 
 const AboutImage = styled.figure`
     width: 40%;
-    height: 900px;
+    height: 850px;
 `
 const Image = styled(Img)`
   height: 100%;
