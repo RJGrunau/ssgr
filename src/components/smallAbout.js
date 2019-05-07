@@ -7,6 +7,7 @@ const TextHolder = styled.div`
   width: 40%;
   margin-top: 100px;
   padding: 15px;
+  margin: 15px;
   text-align: left;
   background: rgba(128,128,128,0.3);
   text-align: left;

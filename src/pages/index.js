@@ -21,8 +21,10 @@ const Container = styled.div`
 const MinorContainer = styled.section`
   margin-top: 125px;
   width: 100%;
-  background: blue;
-  height: 400px;
+  display: flex; 
+  flex-flow: wrap row;
+  justify-content: center;
+  margin-bottom: 100px;
 `
 
 const ImageHolder = styled.div`
@@ -61,8 +63,8 @@ const IndexPage = ({ data }) => (
       </Container>
       <MinorContainer>
 
-        {/* <SmallAbout/>
-        <SmallContact/> */}
+        <SmallAbout/>
+        <SmallContact/>
       </MinorContainer>
       
   </Layout>
