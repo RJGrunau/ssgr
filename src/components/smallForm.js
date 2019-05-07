@@ -2,9 +2,8 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const FormShell = styled.form`
-  margin-top: 100px;
 	width: 40%;
-	background: rgba(128,128,128,0.3);
+	background: rgba(128,128,128,1);
   padding: 15px;
   border-radius: 5px;
   display: flex;
@@ -17,6 +16,7 @@ const Labels = styled.label`
   color: rgba(27,27,27,0.9);
 `
 
+//TODO: lighten border on focus and use rgba code!
 const Inputs = styled.input`
   border-radius: 5px;
   width: 60%;

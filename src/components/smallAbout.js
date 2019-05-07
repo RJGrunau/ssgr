@@ -9,7 +9,7 @@ const TextHolder = styled.div`
   padding: 15px;
   margin: 15px;
   text-align: left;
-  background: rgba(128,128,128,0.3);
+  background: rgba(21,21,21,0.3);
   text-align: left;
   border-radius: 5px; 
 `
