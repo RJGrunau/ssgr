@@ -63,7 +63,6 @@ const IndexPage = ({ data }) => (
         </TextHolder>
       </Container>
       <MinorContainer>
-
         <SmallAbout/>
         <SmallContact/>
       </MinorContainer>
