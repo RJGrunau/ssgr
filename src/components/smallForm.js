@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const FormShell = styled.form`
 	width: 40%;
-	background: rgba(128,128,128,1);
+	background: rgba(128,128,128,.5);
   padding: 15px;
   border-radius: 5px;
   display: flex;
