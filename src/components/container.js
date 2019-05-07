@@ -8,6 +8,8 @@ const Containers = styled.div`
   background: linear-gradient(rgba(21,21,21,1),
   rgba(21,21,21,0.3));
   color: white;
+  display: flex;
+  flex-flow: wrap row;
 `
 export default ({children}) => (
 
