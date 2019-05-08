@@ -8,6 +8,7 @@ const TextHolder = styled.div`
     margin-top: 5px;
     margin-left: 30px;
     text-align: left;
+    line-height: 1.45em;
 
     @media(max-width: 800px){
         width: 100%;

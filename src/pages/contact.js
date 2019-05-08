@@ -40,6 +40,8 @@ class ContactPage extends Component {
     }
     render() {
       const contactUs = `Emailing us through the contact form works best, but for emergencies the phone works as well:`
+      const findUs = `We can be found here:`
+      const address = ` 323 Puyallup Ave suite d, Tacoma, WA 98421`
         return(
           <Layout>
             <SEO title="About" keywords={[`Jeff Hoppe`,`Tacoma Guitar Repair`,`contact south sound guitar repair`]}/>
@@ -61,6 +63,15 @@ class ContactPage extends Component {
                     >
                       (253) 220-3525
                     </OutsideLink>
+                    <Graphs
+                      text={`${findUs}`}
+                    />
+                    <OutsideLink
+                        target = 'newtab'
+                        href="https://www.google.com/maps/place/South+Sound+Guitar+Repair/@47.2126702,-122.4506653,13z/data=!4m12!1m6!3m5!1s0x0:0x2a89591008d1c83a!2sSouth+Sound+Guitar+Repair!8m2!3d47.2409833!4d-122.4297655!3m4!1s0x0:0x2a89591008d1c83a!8m2!3d47.2409833!4d-122.4297655"
+                       >
+                            {`${address}`}
+                    </OutsideLink> 
                   </TextHolder>
                 </ContactSection>
             </Container>
