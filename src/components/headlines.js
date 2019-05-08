@@ -13,7 +13,7 @@ const Headline = styled.h1`
 
   @media(max-width: 800px) {
     font-size: 28pt;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
   }
 `
 
