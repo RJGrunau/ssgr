@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Graphs=styled.p`
 	font-family: 'Open Sans';
 	font-weight: 100;
-	font-size: 24pt;
+	font-size: 18pt;
 	color: #f3f3f3;
   line-height: 1.3em;
   

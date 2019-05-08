@@ -19,6 +19,13 @@ const ContactSection = styled.section`
     flex-flow: wrap column;
   }
 `
+const OutsideLink = styled.a`
+  color: #f3f3f3;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  font-size: 18pt;
+  font-weight: 300;
+`
 
 
 class ContactPage extends Component {
@@ -32,8 +39,8 @@ class ContactPage extends Component {
         }
     }
     render() {
+      const contactUs = `Emailing us through the contact form works best, but for emergencies the phone works as well:`
         return(
-
           <Layout>
             <SEO title="About" keywords={[`Jeff Hoppe`,`Tacoma Guitar Repair`,`contact south sound guitar repair`]}/>
             <Container>
@@ -41,8 +48,19 @@ class ContactPage extends Component {
                   <SmallForm/>
                   <TextHolder>
                     <Graphs
-                      text ="we are by appointment only"
+                      text ="Visits to South Sound Guitar Repair are by appointment only"
                     />
+                    <Graphs
+                      text = "Hours are from 10:00 - 6:00 pm Monday - Friday, excluding holidays"
+                    />
+                    <Graphs
+                      text = {`${contactUs}`}
+                    />
+                    <OutsideLink
+                      href="tel:(253) 220-3525"
+                    >
+                      (253) 220-3525
+                    </OutsideLink>
                   </TextHolder>
                 </ContactSection>
             </Container>
