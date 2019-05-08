@@ -8,6 +8,11 @@ const FormShell = styled.form`
   border-radius: 5px;
   display: flex;
   flex-flow: wrap column;
+
+  @media(max-width: 800px){
+    width: 100%;
+    margin: 0 auto;
+  }
 `
 const Labels = styled.label`
   margin: 5px;

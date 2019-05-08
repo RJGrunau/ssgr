@@ -26,6 +26,10 @@ const MinorContainer = styled.section`
   justify-content: center;
   align-items: flex-end;
   margin-bottom: 100px;
+
+  @media(max-width: 800px) {
+    flex-flow: wrap column;
+  }
 `
 
 const ImageHolder = styled.div`

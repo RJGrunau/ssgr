@@ -6,7 +6,12 @@ const Graphs=styled.p`
 	font-weight: 100;
 	font-size: 24pt;
 	color: #f3f3f3;
-	line-height: 1.3em;
+  line-height: 1.3em;
+  
+  @media(max-width: 800px) {
+    font-size: 18pt;
+    width: 100%;
+  }
 `
 
 export default (props) => {

@@ -12,6 +12,10 @@ const TextHolder = styled.div`
   background: rgba(21,21,21,0.3);
   text-align: left;
   border-radius: 5px; 
+
+  @media(max-width: 800px){
+    width: 100%;
+  }
 `
 const aboutText = `South Sound Guitar Repair is a guitar and bass repair shop in Tacoma, Washington specializing in vintage and high-end repair and set ups. 
 Repair and service are by appointment only. Get in  touch if you'd like to make an appointment to discuss your work on your instrument.`
