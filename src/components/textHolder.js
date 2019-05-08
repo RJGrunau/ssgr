@@ -16,9 +16,9 @@ const TextHolder = styled.div`
     }
 `
 
-const TextDiv = ({childern}) => (
+const TextDiv = ({children}) => (
     <TextHolder>
-        {childern}
+        {children}
     </TextHolder>
 )
  
