@@ -10,6 +10,11 @@ const Headline = styled.h1`
   color: #f3f3f3;
   letter-spacing: 3px;
   text-align: center;
+
+  @media(max-width: 800px) {
+    font-size: 28pt;
+    letter-spacing: 1px;
+  }
 `
 
 export default ( props ) => {
