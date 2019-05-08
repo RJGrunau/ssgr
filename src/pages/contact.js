@@ -4,6 +4,9 @@ import styled from 'styled-components'
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Container from '../components/container'
+import SmallForm from '../components/smallForm'
+import TextHolder from '../components/textHolder'
+import Graphs from '../components/pargagraphs'
 
 const ContactSection = styled.section`
   padding:10px;
@@ -16,14 +19,7 @@ const ContactSection = styled.section`
     flex-flow: wrap column;
   }
 `
-const MainForm = styled.form`
-  width: 40%;
-  margin: 10px;
-  display: flex;
-  flex-flow: wrap column;
-  background: rgba(128,128,128,0.3);
-`
-// const Inputs
+
 
 class ContactPage extends Component {
     constructor(props){
@@ -42,9 +38,12 @@ class ContactPage extends Component {
             <SEO title="About" keywords={[`Jeff Hoppe`,`Tacoma Guitar Repair`,`contact south sound guitar repair`]}/>
             <Container>
                 <ContactSection> 
-                  <MainForm>
-
-                  </MainForm>
+                  <SmallForm/>
+                  <TextHolder>
+                    <Graphs
+                      text ="we are by appointment only"
+                    />
+                  </TextHolder>
                 </ContactSection>
             </Container>
           </Layout>

@@ -99,7 +99,7 @@ export default class SmallContact extends Component {
 
       e.preventDefault();
     }
-
+    //Handle form changes 
     handleChange = e => this.setState({ [e.target.name]: e.target.value })
 
   render() {
