@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const Containers = styled.div`
   width: 100%;
-  height: 700px;
+  
   margin-top: 50px;
   background: linear-gradient(rgba(21,21,21,0.3),
   rgba(21,21,21,0.1));

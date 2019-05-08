@@ -13,7 +13,7 @@ import SmallContact from "../components/smallForm";
 
 const Container = styled.div`
   width: 100%;
-  height: 700px;
+  
   background: linear-gradient(rgba(21,21,21,1),
   rgba(21,21,21,0.3));
   color: white;
