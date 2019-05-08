@@ -67,6 +67,11 @@ const SubmitButton = styled.button`
   }
 `
 
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
 
 export default class SmallContact extends Component {
     constructor(props) {
@@ -80,15 +85,37 @@ export default class SmallContact extends Component {
       }
     }
     
+    handleSubmit = e => {
+      //use fetch api to make a post request
+      fetch("/", {
+        method: "POST",
+        //set the heades to this line below
+        headers: {"Content-Type": "application/x-www-form-urlencoded"},
+        //pass the form name and state in the body
+        body: encode({ "form-name": "contact", ...this.state })
+      })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error))
+
+      e.preventDefault();
+    }
+
+    handleChange = e => this.setState({ [e.target.name]: e.target.value })
+
   render() {
+    const {name, email, message} = this.state
     return (
-      <FormShell>
+      <FormShell 
+        onSubmit={this.handleSubmit}
+      >
         <Labels htmlFor="name">name:</Labels>
 				<Inputs
           name = "name"
           id = "name"
           type = "text"
           placeholder = "your name here"
+          value = {name}
+          onChange={this.handleChange}
         />
         <Labels htmlFor="email">email:</Labels>
 				<Inputs
@@ -96,6 +123,9 @@ export default class SmallContact extends Component {
           id = "email"
           type = "email"
           placeholder = "you@youremail.com"
+          value = {email}
+          onChange={this.handleChange}
+
         />
         <Labels htmlFor="message">message:</Labels>
 				<TextField
@@ -105,10 +135,12 @@ export default class SmallContact extends Component {
           id = "message"
           type = "text"
           placeholder = "your message here"
+          value = {message}
+          onChange={this.handleChange}
         />
         <ButtonHolder>
           <SubmitButton
-            
+            type = "submit"
           >
             Send
           </SubmitButton>
