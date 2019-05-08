@@ -25,6 +25,7 @@ const AboutImage = styled.figure`
 
     @media(max-width: 800px) {
         width: 100%;
+        height: 400px;
     }
 `
 const Image = styled(Img)`
