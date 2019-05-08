@@ -61,6 +61,10 @@ const SubmitButton = styled.button`
   &:hover{
 
   }
+
+  @media(max-width: 800px) {
+    width: 40%;
+  }
 `
 
 
@@ -106,7 +110,7 @@ export default class SmallContact extends Component {
           <SubmitButton
             
           >
-            Submit
+            Send
           </SubmitButton>
         </ButtonHolder>
       </FormShell>
