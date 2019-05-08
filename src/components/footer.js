@@ -1,41 +1,50 @@
 import React from 'react';
 import styled from 'styled-components'
 
-import Graphs from '../components/pargagraphs'
+
 
 
 const SiteFooter = styled.footer`
-    width: 100%;
-    background: rgba(128,128,128,0.2);
+  width: 100%;
+  background: rgba(128,128,128,0.2);
 `
 const FooterContainer = styled.div`
-    margin: 0 auto;
-    max-width: 1400px;
-    padding: 0px 1.0875rem 1.45rem;
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 0px 1.0875rem 1.45rem;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
 `
-const CopyWrite = styled.div`
-    padding: 5px;
-    margin: 10px;
-    font-size: 11pt;
-    font-family: 'Open Sans';
-    font-weigth: 100;
-    color: #f3f3f3;
-
+const InfoBoxes = styled.div`
+  padding: 5px;
+  margin: 10px;
+  font-size: 11pt;
+  font-family: 'Open Sans';
+  font-weigth: 100;
+  color: #f3f3f3;
 `
-
+const OutsideLink = styled.a`
+  color: #87cefa;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  font-size: 11pt;
+  font-weight: 300;
+`
 
 const Footer = () => (
     <SiteFooter>
     <FooterContainer>
-    <CopyWrite>
+    <InfoBoxes>
     © {new Date().getFullYear()}, South Sound Guitar Repair
-    </CopyWrite>
+    </InfoBoxes>
+    <InfoBoxes>
+
       © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        {` `}
+        <OutsideLink href="https://www.gatsbyjs.org">Gatsby</OutsideLink>,
+        by: <OutsideLink href="https://www.rjgrunau.com">Robert Grunau</OutsideLink>
+    </InfoBoxes>
     </FooterContainer>
     </SiteFooter>
 )
