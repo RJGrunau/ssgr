@@ -12,17 +12,31 @@ const FooterContainer = styled.div`
     margin: 0 auto;
     max-width: 1400px;
     padding: 0px 1.0875rem 1.45rem;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+`
+const CopyWrite = styled.div`
+    padding: 5px;
+    margin: 10px;
+    font-size: 11pt;
+    font-family: 'Open Sans';
+    font-weigth: 100;
+    color: #f3f3f3;
+
 `
 
 
 const Footer = () => (
     <SiteFooter>
-        <FooterContainer>
-
-            © {new Date().getFullYear()}, Built with
-                {` `}
-                <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </FooterContainer>
+    <FooterContainer>
+    <CopyWrite>
+    © {new Date().getFullYear()}, South Sound Guitar Repair
+    </CopyWrite>
+      © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+    </FooterContainer>
     </SiteFooter>
 )
  
