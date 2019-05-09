@@ -15,13 +15,12 @@ Following graduation, I was happy to accept a job in Seattle at the Dusty String
 However the pull of repairs wouldn’t leave me, so I ended up working for Mike Lull in Bellevue.  In this fast paced shop, I was able to learn a great deal about many instruments but mostly electric basses and guitars.  It was a great opportunity to learn real world experience from experts.  A side bonus was I got to work on many beautiful high end instruments.
 
 I truly wanted to round out my knowledge and expand my skill set, so I set out for the Dusty Strings repair department.  Again, I was lucky enough to work with some true masters and learn, learn, learn.  This environment proved to be mostly acoustic instruments, but that was what I needed.   Neck resets, bridge reglues, fretwork, huge rebuild projects.  Eventually I was able to work my way up to Repair Shop Manager.
-
 In 2016 after having learned so much all these years, I was ready to strike out on my own.  Hang my shingle.  I grew up in Tacoma, so it seems it has come full circle.  
 I am ready to help with your project, large or small.  Acoustic or electric.`
 
 const AboutImage = styled.figure`
     width: 40%;
-    height: 850px;
+    height: 700px;
 
     @media(max-width: 800px) {
         width: 100%;
@@ -51,7 +50,7 @@ const AboutGraphs = styled.p`
     width: 100%;
     font-family: 'Open Sans';
     font-weight: 100;
-    font-size: 18pt;
+    font-size: 16pt;
     line-height: 1.5em;
 `
 
