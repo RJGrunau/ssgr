@@ -24,7 +24,7 @@ const MinorContainer = styled.section`
   display: flex; 
   flex-flow: wrap row;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
   margin-bottom: 100px;
 
   @media(max-width: 800px) {
@@ -43,7 +43,6 @@ const Image = styled(Img)`
 `
 const TextHolder = styled.section`
   width: 100%;
-  padding: 10px;
   margin-top: 50px;
   display: flex;
   flex-flow: wrap row;

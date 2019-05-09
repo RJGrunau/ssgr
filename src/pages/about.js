@@ -18,6 +18,10 @@ I truly wanted to round out my knowledge and expand my skill set, so I set out f
 In 2016 after having learned so much all these years, I was ready to strike out on my own.  Hang my shingle.  I grew up in Tacoma, so it seems it has come full circle.  
 I am ready to help with your project, large or small.  Acoustic or electric.`
 
+const AboutSection = styled.section`
+    width: 100%;
+    height: 100vh;
+`
 const AboutImage = styled.figure`
     width: 40%;
     height: 700px;
@@ -58,19 +62,22 @@ const AboutGraphs = styled.p`
 const AboutPage  = ({data}) => (
     <Layout>
         <SEO title="About" keywords={[`Jeff Hoppe`,`Tacoma Guitar Reair`]}/>
-        <Container>
-            <AboutImage>
-                <Image
-                    fluid = {data.file.childImageSharp.fluid}
-                    alt="jeff hoppe"
-                />
-            </AboutImage>
-            <TextHolder>
-                <AboutGraphs>
-                    {`${aboutJeff}`}
-                </AboutGraphs>
-            </TextHolder>
-        </Container>
+        <AboutSection>
+            <Container>
+                <AboutImage>
+                    <Image
+                        fluid = {data.file.childImageSharp.fluid}
+                        alt="jeff hoppe"
+                    />
+                </AboutImage>
+                <TextHolder>
+                    <AboutGraphs>
+                        {`${aboutJeff}`}
+                    </AboutGraphs>
+                </TextHolder>
+            </Container>
+        </AboutSection>
+
     </Layout>
 )
  

@@ -35,6 +35,7 @@ const Inputs = styled.input`
 
 const TextField = styled.textarea`
   width: 70%;
+  height: 30%;
   margin: 10px; 
   border-radius: 5px;
   padding: 5px;
@@ -134,8 +135,8 @@ export default class SmallContact extends Component {
         />
         <Labels htmlFor="message">message:</Labels>
 				<TextField
-          row ="10"
-          cols = "60"
+          // row ="10"
+          // cols = "60"
           name = "message"
           id = "message"
           type = "text"

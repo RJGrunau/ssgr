@@ -9,7 +9,7 @@ const Graphs=styled.p`
   line-height: 1.3em;
   
   @media(max-width: 800px) {
-    font-size: 18pt;
+    font-size: 16pt;
     width: 100%;
   }
 `
