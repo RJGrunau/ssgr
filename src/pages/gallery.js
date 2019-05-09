@@ -8,27 +8,12 @@ import PhotoBox from '../components/photobox'
 
 const GalleryContainer = styled.section`
   width: 100%;
-  height: 100vh;
   margin-top: 50px;
   padding: 20px;
   display: flex;
   flex-flow: wrap row;
+  justify-content: center;
 `
-// const GalleryImageHolder = styled.figure`
-//   width: 25%;
-//   height: 500px;
-//   margin: 10px;
-//   border-radius: 5px;
-//   box-shadow: 3px 3px rgba(118,118,118,0.3);
-//   z-index: 99;
-// `
-
-// const GalleryImage = styled(Img)`
-//   width: 100%;
-//   height: 100%;
-//   background: cover;
-//   border-radius: 5px;
-// `
 
 
 export default () => {
@@ -49,6 +34,20 @@ export default () => {
           }
         }
       }
+      gretsch: file(relativePath: {eq: "gretch.png"}){
+        childImageSharp {
+          fluid(maxWidth: 400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      jag: file(relativePath: {eq: "jag.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     } 
   `}render={(data) => (
     <Layout>
@@ -61,13 +60,14 @@ export default () => {
           image = {data.L00}
           alt = "Gibson L00"
         />
-        {/* <GalleryImageHolder
-          key={data.file}
-        >
-          <GalleryImage
-            fluid = {data.doubleO18.childImageSharp.fluid}
-          />
-        </GalleryImageHolder> */}
+        <PhotoBox
+          image = {data.gretsch}
+          alt = "Gretsch Guitar"
+        />
+        <PhotoBox 
+          image= {data.jag}
+          alt = "Fender Jaguar"
+        />
       </GalleryContainer>
     </Layout>
   )}
