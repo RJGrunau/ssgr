@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby'
 import { SocialIcon} from 'react-social-icons'
-
+import SEO from '../components/seo'
 import styled from 'styled-components'
 
 import Layout from '../components/layout'
@@ -73,6 +73,7 @@ export default () => {
     } 
   `}render={(data) => (
     <Layout>
+      <SEO title="Home" keywords={[`South Sound Guitars`, `Sout Sound Guitars Instagram`, `Guitar photos`, `Instagram`, `Tacoma`]} />
       <GalleryContainer>
         <PhotoBox
           image = {data.doubleO18}
