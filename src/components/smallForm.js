@@ -11,6 +11,7 @@ const FormShell = styled.form`
 
   @media(max-width: 800px){
     width: 100%;
+    height: 450px;
     margin: 0 auto;
   }
 `
@@ -44,6 +45,10 @@ const TextField = styled.textarea`
   &:focus{
     border: solid 2px blue;
   }
+
+  @media(max-width: 800px) {
+    width: 90%;         
+  }
 `
 const ButtonHolder = styled.div`
   width: 100%;
@@ -58,7 +63,7 @@ const SubmitButton = styled.button`
   background: rgba(50,205,50,0.8);
   font-family: 'Open Sans';
   font-weigth: 100;
-
+  color: #f3f3f3;
   &:hover{
 
   }
