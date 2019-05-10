@@ -13,7 +13,6 @@ import SmallContact from "../components/smallForm";
 
 const Container = styled.div`
   width: 100%;
-  
   background: linear-gradient(rgba(21,21,21,1),
   rgba(21,21,21,0.3));
   color: white;
@@ -29,9 +28,10 @@ const MinorContainer = styled.section`
 
   @media(max-width: 800px) {
     flex-flow: wrap column;
+    margin-top: 10px;
+    margin-botton: 10px;
   }
 `
-
 const ImageHolder = styled.div`
   width: 100%;
   height: 400px;
@@ -48,6 +48,10 @@ const TextHolder = styled.section`
   flex-flow: wrap row;
   justify-content: center;
   align-content: center;
+
+  @media(max-width: 800px) {
+    margin-top: 5px;
+  }
 `
 
 const IndexPage = ({ data }) => (
@@ -61,7 +65,7 @@ const IndexPage = ({ data }) => (
         </ImageHolder>
         <TextHolder>
           <Headlines title = "south sound guitar repair"/>
-          <Headlines title="Vintage and High-end gutair and bass repair"/>
+          <Headlines title="Full Service guitar and bass repair"/>
           <MinorHeadline title="Tacoma Washinton" />
         </TextHolder>
       </Container>
