@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby'
+import { SocialIcon} from 'react-social-icons'
 
 import styled from 'styled-components'
 
@@ -25,7 +26,7 @@ const Divider = styled.div`
 
 export default () => {
   return(
-  <StaticQuery query={graphql`
+  <StaticQuery query={graphql` 
     {
       doubleO18: file(relativePath: {eq: "0018.png"}){
         childImageSharp {
@@ -88,6 +89,9 @@ export default () => {
         <Divider>
           <Graphs
             text = "see more on out instagram"
+          />
+          <SocialIcon
+            url="https://instagram.com/southsoundguitars"
           />
         </Divider>
         <PhotoBox 
