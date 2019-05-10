@@ -5,6 +5,7 @@ import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import PhotoBox from '../components/photobox'
+import Graphs from '../components/pargagraphs'
 
 const GalleryContainer = styled.section`
   width: 100%;
@@ -14,7 +15,13 @@ const GalleryContainer = styled.section`
   flex-flow: wrap row;
   justify-content: center;
 `
-
+const Divider = styled.div`
+  width: 100%;
+  padding: 20px;
+  margin: 10px;
+  color: #f3f3f3;
+  text-align: center;
+`
 
 export default () => {
   return(
@@ -48,6 +55,20 @@ export default () => {
           }
         }
       }
+      reso: file(relativePath: {eq: "respickup.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      gibsonl1: file(relativePath: {eq: "L1.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     } 
   `}render={(data) => (
     <Layout>
@@ -64,9 +85,22 @@ export default () => {
           image = {data.gretsch}
           alt = "Gretsch Guitar"
         />
+        <Divider>
+          <Graphs
+            text = "see more on out instagram"
+          />
+        </Divider>
         <PhotoBox 
           image= {data.jag}
           alt = "Fender Jaguar"
+        />
+        <PhotoBox
+          image={data.reso}
+          alt="resonator guitar with pickup installed"
+        />
+        <PhotoBox
+          image={data.gibsonl1}
+          alt ="Gibson L1"
         />
       </GalleryContainer>
     </Layout>
