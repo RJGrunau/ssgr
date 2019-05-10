@@ -12,7 +12,6 @@ const FormShell = styled.form`
   @media(max-width: 800px){
     width: 100%;
     height: 450px;
-    margin: 0 auto;
   }
 `
 const Labels = styled.label`
