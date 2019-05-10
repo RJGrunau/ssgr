@@ -15,6 +15,10 @@ const GalleryContainer = styled.section`
   display: flex;
   flex-flow: wrap row;
   justify-content: center;
+
+  @media(max-width: 800) {
+    flex-flow: wrap column;
+  }
 `
 const Divider = styled.div`
   width: 100%;
@@ -89,7 +93,7 @@ export default () => {
         />
         <Divider>
           <Graphs
-            text = "see more on out instagram"
+            text = "see more on our instagram"
           />
           <SocialIcon
             url="https://instagram.com/southsoundguitars"

@@ -9,6 +9,11 @@ const GalleryImageHolder = styled.figure`
   border-radius: 5px;
   box-shadow: 3px 3px rgba(118,118,118,0.3);
   z-index: 99;
+
+  @media(max-width: 800px) {
+    width: 100%;
+    height: 300px;
+  }
 `
 
 const GalleryImage = styled(Img)`
