@@ -16,7 +16,7 @@ const FooterContainer = styled.div`
   padding: 0px 1.0875rem 1.45rem;
   display: flex;
   flex-flow: wrap row;
-  justify-content: space-between;
+  justify-content: space-around;
   aligin-items: center;
 
   @media(max-width: 800px) {
@@ -62,11 +62,14 @@ const Footer = () => (
         />
     </InfoBoxes>
     <InfoBoxes>
-
-      Built with
+      <div>
+        Built with
         {` `}
         <OutsideLink href="https://www.gatsbyjs.org">Gatsby</OutsideLink>
+      </div>
+      <div>
         by: <OutsideLink href="https://www.rjgrunau.com">Robert Grunau</OutsideLink>
+      </div>
     </InfoBoxes>
     </FooterContainer>
     </SiteFooter>
