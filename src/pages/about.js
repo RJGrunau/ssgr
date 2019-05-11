@@ -60,7 +60,7 @@ const AboutGraphs = styled.p`
 
 const AboutPage  = ({data}) => (
     <Layout>
-        <SEO title="About" keywords={[`Jeff Hoppe`,`Tacoma Guitar Reair`]}/>
+        <SEO title="About" keywords={[`Jeff Hoppe`,`Tacoma Guitar Reair`, `vintage instrument repair`, `guitar and bass repair`]}/>
         <AboutSection>
             <Container>
                 <AboutImage>
