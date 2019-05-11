@@ -7,7 +7,7 @@ import styled from 'styled-components'
 const SiteFooter = styled.footer`
   width: 100%;
   background: rgba(128,128,128,0.2);
-  position: fixed;
+  
 `
 const FooterContainer = styled.div`
   margin: 0 auto;
