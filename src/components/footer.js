@@ -16,6 +16,12 @@ const FooterContainer = styled.div`
   display: flex;
   flex-flow: wrap row;
   justify-content: space-between;
+  aligin-items: center;
+
+  @media(max-width: 800px) {
+    flex-flow: wrap column;
+    justify-content: center;
+  }
 `
 const InfoBoxes = styled.div`
   padding: 5px;
@@ -37,13 +43,24 @@ const Footer = () => (
     <SiteFooter>
     <FooterContainer>
     <InfoBoxes>
-    © {new Date().getFullYear()}, South Sound Guitar Repair
+      <div>
+      © {new Date().getFullYear()}, South Sound Guitar Repair
+      </div>
+      <div>
+        <OutsideLink
+          href="tel:(253) 220-3525"
+        >
+          (253) 220-3525
+        </OutsideLink>
+      </div>
+    </InfoBoxes>
+    <InfoBoxes>
     </InfoBoxes>
     <InfoBoxes>
 
-      © {new Date().getFullYear()}, Built with
+      Built with
         {` `}
-        <OutsideLink href="https://www.gatsbyjs.org">Gatsby</OutsideLink>,
+        <OutsideLink href="https://www.gatsbyjs.org">Gatsby</OutsideLink>
         by: <OutsideLink href="https://www.rjgrunau.com">Robert Grunau</OutsideLink>
     </InfoBoxes>
     </FooterContainer>
