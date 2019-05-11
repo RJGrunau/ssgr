@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from 'styled-components'
 
-
+import SVG from '../images/South Sound Guitar Repair.svg'
 import Nav from '../components/nav'
 
 
@@ -21,7 +21,7 @@ const HeaderWrapper = styled.div`
   display: flex;
   flex-flow: wrap row;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   @media(max-width: 800px){
     justify-content: center;
     height: 115px;
@@ -46,19 +46,22 @@ const SiteHeadline = styled.h1`
 `
 const HomeLink = styled(Link)`
   color: rgba(243,243,243,1);
+  height: 25px;
+  margin-bottom: 10px;
   text-decoration: none;
 `
 
 const Header = ({ siteTitle }) => (
   <SiteHeader>
     <HeaderWrapper>
-      <SiteHeadline>
+      {/* <SiteHeadline> */}
         <HomeLink
           to="/"
         >
-          {siteTitle}
+        <img src={SVG}/>
+          {/* {siteTitle} */}
         </HomeLink>
-      </SiteHeadline>
+      {/* </SiteHeadline> */}
       <Nav/>
     </HeaderWrapper>
   </SiteHeader>
