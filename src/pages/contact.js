@@ -19,6 +19,12 @@ const ContactSection = styled.section`
     flex-flow: wrap column;
   }
 `
+const BufferDiv = styled.div`
+  width: 100%;
+  height: 10px;
+  margin: 5px;
+  color: transparent;
+`
 const OutsideLink = styled.a`
   color: #f3f3f3;
   text-decoration: none;
@@ -63,6 +69,9 @@ class ContactPage extends Component {
                     >
                       (253) 220-3525
                     </OutsideLink>
+                    <BufferDiv>
+                      some text you can't see because I'm running out of time and need to ship
+                    </BufferDiv>
                     <Graphs
                       text={`${findUs}`}
                     />
@@ -70,7 +79,9 @@ class ContactPage extends Component {
                         target = 'newtab'
                         href="https://www.google.com/maps/place/South+Sound+Guitar+Repair/@47.2126702,-122.4506653,13z/data=!4m12!1m6!3m5!1s0x0:0x2a89591008d1c83a!2sSouth+Sound+Guitar+Repair!8m2!3d47.2409833!4d-122.4297655!3m4!1s0x0:0x2a89591008d1c83a!8m2!3d47.2409833!4d-122.4297655"
                        >
-                            {`${address}`}
+                        <Graphs
+                          text={`${address}`}
+                        /> 
                     </OutsideLink> 
                   </TextHolder>
                 </ContactSection>
