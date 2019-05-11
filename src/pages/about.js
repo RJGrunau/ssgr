@@ -20,7 +20,6 @@ I am ready to help with your project, large or small.  Acoustic or electric.`
 
 const AboutSection = styled.section`
     width: 100%;
-    height: 100vh;
 `
 const AboutImage = styled.figure`
     width: 40%;
