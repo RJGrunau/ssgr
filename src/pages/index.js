@@ -56,7 +56,7 @@ const TextHolder = styled.section`
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Home" keywords={[`South Sound Guitar Repair`, `Tacoma Wa`, `Guitar Repair Tacoma Washington`, `Vintage Guitar Repair`, `Jeff Hoppe`,`Bass Repair`,`Bass Repair Tacoma`]} />
       <Container>
         <ImageHolder>
           <Image

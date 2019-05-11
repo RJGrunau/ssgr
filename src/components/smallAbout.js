@@ -20,13 +20,16 @@ const TextHolder = styled.div`
 `
 const aboutText = `South Sound Guitar Repair is a guitar and bass repair shop in Tacoma, Washington specializing in vintage and high-end repair and set ups. 
 Repair and service are by appointment only. Get in  touch if you'd like to make an appointment to discuss your work on your instrument.`
-
+const taylor = `South Sound Guitar Repair is Taylor Warranty Center`
 //TODO: Import text holder component
 export default () => {
   return (
     <TextHolder>
       <Graphs
         text = {`${aboutText}`}
+      />
+      <Graphs
+        text = {`${taylor}`}
       />
     </TextHolder>
   )
