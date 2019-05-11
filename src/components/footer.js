@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import { SocialIcon } from 'react-social-icons'
 
 
 
@@ -55,6 +56,10 @@ const Footer = () => (
       </div>
     </InfoBoxes>
     <InfoBoxes>
+      <SocialIcon
+          url="https://instagram.com/southsoundguitars"
+          style={{height: 25, width: 25}}
+        />
     </InfoBoxes>
     <InfoBoxes>
 
