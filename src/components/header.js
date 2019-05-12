@@ -59,7 +59,9 @@ const Header = ({ siteTitle }) => (
         <HomeLink
           to="/"
         >
-        <img src={SVG}/>
+        <img src={SVG}
+          alt="South Sound Guitar Repair Logo"
+        />
           {/* {siteTitle} */}
         </HomeLink>
       {/* </SiteHeadline> */}
