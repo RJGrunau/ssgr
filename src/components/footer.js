@@ -22,6 +22,7 @@ const FooterContainer = styled.div`
   @media(max-width: 800px) {
     flex-flow: wrap column;
     justify-content: center;
+    
   }
 `
 const InfoBoxes = styled.div`
@@ -31,6 +32,7 @@ const InfoBoxes = styled.div`
   font-family: 'Open Sans';
   font-weigth: 100;
   color: #f3f3f3;
+  text-align: center;
 `
 const OutsideLink = styled.a`
   color: #87cefa;

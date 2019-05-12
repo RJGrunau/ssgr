@@ -22,28 +22,29 @@ const HeaderWrapper = styled.div`
   flex-flow: wrap row;
   justify-content: space-between;
   align-items: center;
+  
   @media(max-width: 800px){
     justify-content: center;
     height: 115px;
   }
 `
-const SiteHeadline = styled.h1`
-  margin: 0;
-  width: 40%;
-  font-family: 'Open Sans';
-  font-weight: 300;
-  letter-spacing: 2px;
-  padding-bottom: 10px;
+// const SiteHeadline = styled.h1`
+//   margin: 0;
+//   width: 40%;
+//   font-family: 'Open Sans';
+//   font-weight: 300;
+//   letter-spacing: 2px;
+//   padding-bottom: 10px;
   
-  @media(max-width: 800px){
-    width: 100%;
-    font-size: 20pt;
-    display: flex;
-    justify-content: center;
-    letter-spacing: normal;
-    margin-bottom: 15px;
-  }
-`
+//   @media(max-width: 800px){
+//     width: 100%;
+//     font-size: 20pt;
+//     display: flex;
+//     justify-content: center;
+//     letter-spacing: normal;
+//     margin-bottom: 15px;
+//   }
+// `
 const HomeLink = styled(Link)`
   color: rgba(243,243,243,1);
   height: 25px;
