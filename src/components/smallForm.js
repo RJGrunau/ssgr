@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const FormShell = styled.form`
-	width: 40%;
+  width: 40%;
+  max-height: 450px;
 	background: rgba(128,128,128,.5);
   padding: 15px;
   border-radius: 5px;

@@ -18,6 +18,10 @@ const ContactSection = styled.section`
     padding: 5px;
     flex-flow: wrap column;
   }
+
+  @media(min-width: 801px){
+    margin-bottom: 300px;
+  }
 `
 const BufferDiv = styled.div`
   width: 100%;
