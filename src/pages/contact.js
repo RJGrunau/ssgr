@@ -49,7 +49,7 @@ class ContactPage extends Component {
         }
     }
     render() {
-      const contactUs = `Emailing us through the contact form works best, but for emergencies the phone works as well:`
+      const contactUs = `Emailing us through the contact form works best, but for the phone works as well:`
       const findUs = `We can be found here:`
       const address = ` 323 Puyallup Ave suite d, Tacoma, WA 98421`
         return(
