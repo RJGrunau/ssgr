@@ -66,7 +66,7 @@ const IndexPage = ({ data }) => (
         <TextHolder>
           <Headlines title = "south sound guitar repair"/>
           <Headlines title="Full Service guitar and bass repair"/>
-          <MinorHeadline title="Tacoma Washinton" />
+          <MinorHeadline title="Tacoma Washington" />
         </TextHolder>
       </Container>
       <MinorContainer>
