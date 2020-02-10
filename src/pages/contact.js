@@ -63,7 +63,7 @@ class ContactPage extends Component {
                       text ="Visits to South Sound Guitar Repair are by appointment only"
                     />
                     <Graphs
-                      text = "Hours are from 10:00 - 6:00 pm Monday - Friday, excluding holidays"
+                      text = "Hours are from 11:00 - 6:00 pm Monday - Friday, excluding holidays"
                     />
                     <Graphs
                       text = {`${contactUs}`}
